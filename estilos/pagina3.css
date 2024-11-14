@@ -1,0 +1,130 @@
+/* estilos/pagina3.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #011425; /* Fondo oscuro estilo carreras */
+    color: #fcd800; /* Texto amarillo Red Bull */
+}
+
+header {
+    background-color: rgb(33, 56, 114); /* Azul oscuro Red Bull */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fcd800; /* Amarillo Red Bull al hacer hover */
+    border-bottom: 2px solid #fcd800; /* Línea amarilla debajo del enlace al hacer hover */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.article {
+    background-color: #011425; /* Fondo oscuro estilo carreras */
+    border: 2px solid #fcd800; /* Amarillo Red Bull */
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+    border-color: #e3061e; /* Rojo Red Bull al hacer hover */
+}
+
+.article h2 {
+    margin-top: 0;
+    color: #fcd800; /* Texto amarillo Red Bull */
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.article p {
+    color: white;
+}
+
+.article a button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: #fcd800; /* Amarillo Red Bull */
+    color: white;
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.article a button:hover {
+    transform: translateY(-5px);
+    background-color: #e3061e; /* Rojo Red Bull al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+footer {
+    background-color: rgb(33, 56, 114); /* Azul oscuro Red Bull */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

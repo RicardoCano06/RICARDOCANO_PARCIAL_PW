@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Personal</title>
+    <link rel="stylesheet" href="estilos/pagina1.css">
+</head>
+<body>
+    <header>
+        <h1>Perfil Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil Personal</a></li>
+                <li><a href="portafolio.html">Portafolio de Imágenes</a></li>
+                <li><a href="blog.html">Blog Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="bio-card">
+                <h1>Biografía</h1>
+                <p>Max Verstappen, nacido el 30 de septiembre de 1997 en Hasselt, Bélgica, creció rodeado de automovilismo gracias a su padre, el ex piloto de F1 Jos Verstappen, y su madre, Sophie Kumpen, ex piloto de karting. Comenzó a competir en karting a los cuatro años y rápidamente destacó, ganando campeonatos internacionales en su adolescencia, lo que lo posicionó como un joven prodigio del automovilismo.
+
+                </p>En 2015, con solo 17 años, Max debutó en la Fórmula 1 con Toro Rosso, convirtiéndose en el piloto más joven en la historia de la F1. Un año después, fue ascendido a Red Bull Racing, donde logró su primera victoria en el Gran Premio de España a los 18 años, estableciendo un récord como el ganador más joven en la categoría. Desde entonces, se consolidó como uno de los pilotos más talentosos y competitivos, con un estilo de conducción agresivo y habilidoso.
+                    
+                </p>En 2021, tras una intensa rivalidad con Lewis Hamilton, Verstappen ganó su primer campeonato mundial en una final de temporada histórica. En 2022 y 2023 continuó dominando, rompiendo récords de victorias y puntos en una sola temporada. Con varios campeonatos a su nombre, Max ha marcado el inicio de una nueva era en la F1, consolidándose como uno de los pilotos más exitosos de su generación.</p>
+            </div>
+            <div class="skills-card">
+                <h2>Logros Profesionales</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Logro</th>
+                            <th>Equipo</th>
+                            <th>Año</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Debut en Fórmula 1; piloto más joven en competir en F1</td>
+                            <td>Toro Rosso</td>
+                            <td>2015</td>
+                        </tr>
+                        <tr>
+                            <td>Primera victoria en el GP de España; piloto más joven en ganar una carrera</td>
+                            <td>Red Bull Racing</td>
+                            <td>2016</td>
+                        </tr>
+                        <tr>
+                            <td>Primer campeonato mundial de F1, tras una intensa temporada contra Hamilton</td>
+                            <td>Red Bull Racing</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>Récord de 15 victorias en una temporada y segundo campeonato mundial</td>
+                            <td>Red Bull Racing</td>
+                            <td>2022</td>
+                        </tr>
+                        <tr>
+                            <td>Tercer campeonato mundial; récord de 19 victorias en una temporada</td>
+                            <td>Red Bull Racing</td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="icon">
+                <a href="https://www.facebook.com/MaxVerstappen/?locale=es_LA" target="_blank">
+                    <img src="imagenes/logo_fb.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://x.com/Max33Verstappen" target="_blank">
+                    <img src="imagenes/logo_x.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/maxverstappen1/" target="_blank">
+                    <img src="imagenes/logo_ig.png" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&reg;Ricardo Cano - <span id="fecha"></span></p>
+    </footer>
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

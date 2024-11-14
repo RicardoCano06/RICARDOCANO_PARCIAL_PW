@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estilos/index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-side-image">
+                <img src="imagenes/max_inicio.png" alt="Max Verstappen">
+            </div>
+            <div class="header-text">
+                <h1>Max Verstappen</h1>
+                <h2>Piloto Profesional Escuderia Red Bull Racing F1</h2>
+            </div>
+            <div class="header-logo">
+                <img src="imagenes/red_bull_logo.jpg" alt="Red Bull Logo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil Personal</a></li>
+                <li><a href="portafolio.html">Portafolio de Imágenes</a></li>
+                <li><a href="blog.html">Blog Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="descriptions">
+            <div class="description-card">
+                <h2>Perfil Personal</h2>
+                <p>En esta sección, podrás leer una breve biografía sobre mí y descubrir mis habilidades organizadas en una tabla. 
+                </p>También encontrarás una sección de contacto con iconos que te llevarán a mis redes sociales, y un enlace para descargar mi currículum en formato PDF.</p>
+            </div>
+            <div class="description-card">
+                <h2>Portafolio de Imágenes</h2>
+                <p>Esta página presenta una galería de imágenes con seis fotos, cada una con un título y una breve descripción.</p>
+            </div>
+            <div class="description-card">
+                <h2>Blog Personal</h2>
+                <p>En mi blog, encontrarás tres artículos con títulos, imágenes de encabezado y descripciones. 
+                </p>Cada artículo incluye un botón de "Leer más" que te llevará a una página externa para obtener más información.</p>
+            </div>
+        </section>
+        <section class="buttons">
+            <button class="btn" onclick="location.href='perfil.html'">Perfil Personal</button>
+            <button class="btn" onclick="location.href='portafolio.html'">Portafolio de Imágenes</button>
+            <button class="btn" onclick="location.href='blog.html'">Blog Personal</button>
+            <button class="btn">Proyectos Interactivos</button>
+            <button class="btn">Biblioteca Personal</button>
+        </section>
+    </main>
+    <footer>
+        <p>&reg;Ricardo Cano - <span id="fecha"></span></p>
+    </footer>
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

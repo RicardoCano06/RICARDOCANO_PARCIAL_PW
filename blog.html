@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="estilos/pagina3.css">
+</head>
+<body>
+    <header>
+        <h1>Blog Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil Personal</a></li>
+                <li><a href="portafolio.html">Portafolio de Imágenes</a></li>
+                <li><a href="blog.html">Blog Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="article">
+                <h2>Max Verstappen: Dominio en 2023</h2>
+                <img src="imagenes/dominio2023.jpg" alt="Max Verstappen Dominio en 2023">
+                <p>Este artículo destaca el dominio de Verstappen durante la temporada 2023 de la Fórmula 1. El piloto holandés no solo aseguró su tercer título mundial consecutivo, sino que también rompió sus propios récords con una impresionante cantidad de 19 victorias en la temporada. La consistencia y el rendimiento de Verstappen a lo largo del año, sumado a su habilidad para conducir bajo presión, consolidaron su estatus como uno de los mayores talentos de la F1.</p>
+                <a href="https://www.autosport.com/driver/max-verstappen/829269/" target="_blank"><button>Leer más</button></a>
+            </article>
+            <article class="article">
+                <h2>La evolución de Max Verstappen: De novato a campeón</h2>
+                <img src="imagenes/evolucion.jpg" alt="La evolución de Max Verstappen">
+                <p>Este artículo recorre la carrera de Verstappen desde su debut en 2015 hasta su ascenso al campeonato mundial. Su audaz paso a Red Bull Racing en 2016, su victoria récord en el Gran Premio de España de ese mismo año, y su continuo desarrollo hasta convertirse en contendiente al título son algunos de los puntos que se destacan. Además, se reflexiona sobre cómo Verstappen ha madurado como piloto y líder dentro de su equipo.</p>
+                <a href="https://en.wikipedia.org/wiki/Max_Verstappen" target="_blank"><button>Leer más</button></a>
+            </article>
+            <article class="article">
+                <h2>El campeonato histórico de Max Verstappen en 2021</h2>
+                <img src="imagenes/campeonato2021.jpg" alt="El campeonato histórico de Max Verstappen en 2021">
+                <p>Este artículo se enfoca en la histórica temporada 2021 de Verstappen, cuando logró su primer título mundial tras una dramática última carrera en Abu Dabi. El artículo analiza la feroz rivalidad entre Verstappen y Lewis Hamilton, culminando en el controvertido desenlace de esa carrera. La capacidad de Verstappen para mantener la calma y aprovechar su oportunidad en una situación de alta tensión le permitió hacer historia en la F1.</p>
+                <a href="https://www.autosport.com/driver/max-verstappen/829269/" target="_blank"><button>Leer más</button></a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&reg;Ricardo Cano - <span id="fecha"></span></p>
+    </footer>
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

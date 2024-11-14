@@ -1,0 +1,148 @@
+/* estilos/index.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #011425; /* Fondo oscuro estilo carreras */
+    color: #fcd800; /* Texto amarillo Red Bull */
+}
+
+header {
+    background-color: rgb(33, 56, 114); /* Azul oscuro Red Bull */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-side-image img,
+.header-logo img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 20px; /* Espacio entre las imágenes y el texto */
+}
+
+.header-text {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fcd800; /* Amarillo Red Bull al hacer hover */
+    border-bottom: 2px solid #fcd800; /* Línea amarilla debajo del enlace al hacer hover */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #011425; /* Fondo oscuro para el contenido principal */
+    color: white; /* Texto amarillo Red Bull */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.description-card {
+    background-color: rgb(33, 56, 114); /* Fondo metálico oscuro */
+    border: 2px solid #fcd800; /* Amarillo Red Bull */
+    padding: 20px;
+    width: 200px;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.description-card h2 {
+    text-align: center; /* Centrar el título */
+    font-size: 1.2em; /* Ajustar el tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.description-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+    border-color: #e3061e; /* Rojo Red Bull al hacer hover */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: #fcd800; /* Amarillo Red Bull */
+    color: white;
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: #e3061e; /* Rojo Red Bull al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+footer {
+    background-color: rgb(33, 56, 114); /* Azul oscuro Red Bull */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

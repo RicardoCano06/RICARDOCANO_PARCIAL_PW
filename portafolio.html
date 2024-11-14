@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Imágenes</title>
+    <link rel="stylesheet" href="estilos/pagina2.css">
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Imágenes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil Personal</a></li>
+                <li><a href="portafolio.html">Portafolio de Imágenes</a></li>
+                <li><a href="blog.html">Blog Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="image-container">
+                <img src="imagenes/debut.jpg" alt="Piloto más joven en debutar en la F1">
+                <div class="overlay">
+                    <h2>Piloto más joven en debutar en la F1</h2>
+                    <p>Con solo 17 años y 166 días, Max Verstappen debutó en la Fórmula 1 en 2015 con el equipo Toro Rosso (hoy AlphaTauri), convirtiéndose en el piloto más joven en competir en una carrera de F1.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/ganar.jpg" alt="Piloto más joven en ganar una carrera">
+                <div class="overlay">
+                    <h2>Piloto más joven en ganar una carrera</h2>
+                    <p>En 2016, en su primera carrera con Red Bull Racing en el Gran Premio de España, Verstappen ganó la carrera a los 18 años y 228 días, estableciendo el récord del ganador más joven en la historia de la F1.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/campeon.jpg" alt="Campeón Mundial de F1">
+                <div class="overlay">
+                    <h2>Campeón Mundial de F1</h2>
+                    <p>Max Verstappen se convirtió en campeón mundial en 2021, ganando un emocionante y polémico campeonato contra Lewis Hamilton en la última vuelta del Gran Premio de Abu Dabi. Ha ganado los títulos de 2022 y 2023 también, consolidando su posición como uno de los pilotos dominantes.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/victorias.jpg" alt="Mayor cantidad de victorias en una temporada">
+                <div class="overlay">
+                    <h2>Mayor cantidad de victorias en una temporada</h2>
+                    <p>En 2023, Verstappen rompió el récord de mayor cantidad de victorias en una temporada, con 19 victorias, superando el récord anterior de 15 establecido en 2022.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/puntos.jpg" alt="Mayor cantidad de puntos en una temporada">
+                <div class="overlay">
+                    <h2>Mayor cantidad de puntos en una temporada</h2>
+                    <p>También en 2023, estableció el récord de más puntos en una temporada, alcanzando un impresionante total de 575 puntos.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/victorias_consecutivas.jpg" alt="Piloto con más victorias consecutivas">
+                <div class="overlay">
+                    <h2>Piloto con más victorias consecutivas</h2>
+                    <p>Verstappen estableció un nuevo récord en 2023 al ganar 10 carreras consecutivas, superando el récord anterior de 9 victorias.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/holandes.jpg" alt="Primera victoria de un piloto holandés">
+                <div class="overlay">
+                    <h2>Primera victoria de un piloto holandés</h2>
+                    <p>Verstappen es el primer y único piloto holandés en ganar una carrera y un campeonato mundial en la historia de la F1, logrando ambos con un nivel de dominio que ha hecho historia.</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/victoria_50.jpg" alt="Victoria número 50 en F1">
+                <div class="overlay">
+                    <h2>Victoria número 50 en F1</h2>
+                    <p>Verstappen alcanzó su victoria número 50 en la Fórmula 1 en el Gran Premio de Estados Unidos de 2023, convirtiéndose en uno de los pocos pilotos en superar ese hito.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&reg;Ricardo Cano - <span id="fecha"></span></p>
+    </footer>
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
