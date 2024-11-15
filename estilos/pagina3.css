@@ -15,6 +15,7 @@ header {
     color: white;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    position: relative;
 }
 
 header h1 {
@@ -47,6 +48,31 @@ nav ul li a:hover {
     border-bottom: 2px solid #fcd800; /* Línea amarilla debajo del enlace al hacer hover */
 }
 
+.color-box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e3061e; /* Rojo Red Bull */
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #e3061e; /* Rojo Red Bull */
+    }
+    33% {
+        background-color: #fcd800; /* Amarillo Red Bull */
+    }
+    66% {
+        background-color: #011425; /* Azul oscuro Red Bull */
+    }
+    100% {
+        background-color: #e3061e; /* Rojo Red Bull */
+    }
+}
+
 main {
     flex: 1;
     display: flex;
@@ -71,6 +97,16 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
     border-radius: 10px; /* Bordes redondeados */
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 2s ease-out forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .article:hover {

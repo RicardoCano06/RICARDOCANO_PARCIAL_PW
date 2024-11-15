@@ -15,6 +15,7 @@ header {
     color: white;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    position: relative;
 }
 
 header h1 {
@@ -47,6 +48,24 @@ nav ul li a:hover {
     border-bottom: 2px solid #fcd800; /* Línea amarilla debajo del enlace al hacer hover */
 }
 
+.rotating-text {
+    position: absolute;
+    top: 50px; /* Bajar el texto rotatorio */
+    right: 10px;
+    font-size: 1.2em;
+    color: #fcd800; /* Texto amarillo Red Bull */
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 main {
     flex: 1;
     display: flex;
@@ -66,8 +85,8 @@ main {
 
 .image-container {
     position: relative;
-    width: 500px; /* Aumentar el tamaño de las imágenes */
-    height: 400px; /* Aumentar el tamaño de las imágenes */
+    width: 800px; /* Aumentar el tamaño de las imágenes */
+    height: 600px; /* Aumentar el tamaño de las imágenes */
     overflow: hidden;
     border: 2px solid #fcd800; /* Amarillo Red Bull */
     border-radius: 10px; /* Bordes redondeados */
@@ -93,7 +112,7 @@ main {
     background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
     color: white; /* Texto blanco */
     width: 100%;
-    padding: 20px;
+    padding: 10px; /* Reducir el padding */
     text-align: left;
     transition: background 0.3s;
     opacity: 0;
@@ -108,12 +127,12 @@ main {
 
 .overlay h2 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Reducir el tamaño del título */
 }
 
 .overlay p {
-    margin: 10px 0 0;
-    font-size: 1em;
+    margin: 5px 0 0; /* Reducir el margen */
+    font-size: 0.9em; /* Reducir el tamaño del texto */
 }
 
 footer {
@@ -123,9 +142,131 @@ footer {
     padding: 20px 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
     margin-top: auto;
+    width: 100%; /* Asegurar que el footer ocupe todo el ancho */
 }
 
-footer p {
-    margin: 0;
-    font-size: 1em;
+.image-container:hover:nth-child(1) img {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.image-container:hover:nth-child(2) img {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.image-container:hover:nth-child(3) img {
+    animation: slideInRight 1s ease-in-out;
+}
+
+.image-container:hover:nth-child(4) img {
+    animation: zoomIn 1s ease-in-out;
+}
+
+.image-container:hover:nth-child(5) img {
+    animation: rotateIn 1s ease-in-out;
+}
+
+.image-container:hover:nth-child(6) img {
+    animation: flipInX 1s ease-in-out;
+}
+
+.image-container:hover:nth-child(7) img {
+    animation: flipInY 1s ease-in-out;
+}
+
+.image-container:hover:nth-child(8) img {
+    animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(400px) rotateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flipInY {
+    from {
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(400px) rotateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
 }

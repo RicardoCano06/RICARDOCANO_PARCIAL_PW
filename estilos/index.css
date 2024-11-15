@@ -15,6 +15,7 @@ header {
     color: white;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    position: relative;
 }
 
 .header-content {
@@ -22,6 +23,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    animation: moveLeftRight 3s linear infinite; /* Animación de movimiento */
 }
 
 .header-side-image img,
@@ -68,7 +70,7 @@ main {
     padding: 20px;
     text-align: center;
     background-color: #011425; /* Fondo oscuro para el contenido principal */
-    color: white; /* Texto amarillo Red Bull */
+    color: white;
 }
 
 section {
@@ -133,6 +135,33 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
 }
 
+.btn:active {
+    transform: scale(0.95); /* Achicar levemente al presionar */
+}
+
+.icon {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    width: 50px; /* Tamaño fijo para los iconos */
+    height: 50px; /* Tamaño fijo para los iconos */
+    border: 2px solid #fcd800; /* Amarillo Red Bull */
+    border-radius: 50%; /* Bordes redondeados */
+}
+
+.icon img {
+    width: 100%; /* Ajustar la imagen al tamaño del contenedor */
+    height: 100%;
+    border-radius: 50%; /* Bordes redondeados */
+    border: 2px solid #fcd800; /* Amarillo Red Bull */
+    transition: border-color 0.3s;
+}
+
+.icon:hover img {
+    border-color: #e3061e; /* Rojo Red Bull al hacer hover */
+}
+
 footer {
     background-color: rgb(33, 56, 114); /* Azul oscuro Red Bull */
     color: white;
@@ -145,4 +174,16 @@ footer {
 footer p {
     margin: 0;
     font-size: 1em;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
